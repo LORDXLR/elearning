@@ -1,0 +1,10 @@
+<?php
+     session_start();
+     $_SESSION["siswa_id"];
+     $_SESSION["siswa_username"];
+     unset($_SESSION["siswa_id"]);
+     unset($_SESSION["siswa_username"]);
+     session_unset();
+     session_destroy();
+     header("location:index.php");
+?>
